@@ -1,0 +1,144 @@
+Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+== RESTART: C:\Users\Nikhil\Documents\CIS 2532\ch17\homework12_section_17.2.py =
+1. View authors table:
+        first    last
+id                   
+1        Paul  Deitel
+2      Harvey  Deitel
+3       Abbey  Deitel
+4         Dan   Quirk
+5   Alexander    Wald 
+
+2. View titles table:
+         isbn                             title  edition copyright
+0  0135404673     Intro to Python for CS and DS        1      2020
+1  0132151006     Internet & WWW How to Program        5      2012
+2  0134743350               Java How to Program       11      2018
+3  0133976890                  C How to Program        8      2016
+4  0133406954  Visual Basic 2012 How to Program        6      2014
+5  0134601548          Visual C# How to Program        6      2017
+6  0136151574         Visual C++ How to Program        2      2008
+7  0134448235                C++ How to Program       10      2017
+8  0134444302            Android How to Program        3      2017
+9  0134289366         Android 6 for Programmers        3      2016 
+
+3. View first five rows of author_ISBN table:
+   id        isbn
+0   1  0134289366
+1   2  0134289366
+2   5  0134289366
+3   1  0135404673
+4   2  0135404673 
+
+4. Select first and last names from authors:
+       first    last
+0       Paul  Deitel
+1     Harvey  Deitel
+2      Abbey  Deitel
+3        Dan   Quirk
+4  Alexander    Wald 
+
+5. Books with copyright year > 2016:
+                           title  edition copyright
+0  Intro to Python for CS and DS        1      2020
+1            Java How to Program       11      2018
+2       Visual C# How to Program        6      2017
+3             C++ How to Program       10      2017
+4         Android How to Program        3      2017 
+
+6. Authors whose last name starts with 'D':
+     first    last
+id                
+1     Paul  Deitel
+2   Harvey  Deitel
+3    Abbey  Deitel 
+
+7. Authors whose first name matches '_b%':
+    first    last
+id               
+3   Abbey  Deitel 
+
+8. Titles ordered ascending by title:
+                              title
+0         Android 6 for Programmers
+1            Android How to Program
+2                  C How to Program
+3                C++ How to Program
+4     Internet & WWW How to Program
+5     Intro to Python for CS and DS
+6               Java How to Program
+7  Visual Basic 2012 How to Program
+8          Visual C# How to Program
+9         Visual C++ How to Program 
+
+9. Authors ordered by last name, then first name:
+        first    last
+id                   
+3       Abbey  Deitel
+2      Harvey  Deitel
+1        Paul  Deitel
+4         Dan   Quirk
+5   Alexander    Wald 
+
+10. Authors ordered by last DESC, first ASC:
+        first    last
+id                   
+5   Alexander    Wald
+4         Dan   Quirk
+3       Abbey  Deitel
+2      Harvey  Deitel
+1        Paul  Deitel 
+
+11. Titles ending with 'How to Program', ordered by title:
+         isbn                             title  edition copyright
+0  0134444302            Android How to Program        3      2017
+1  0133976890                  C How to Program        8      2016
+2  0134448235                C++ How to Program       10      2017
+3  0132151006     Internet & WWW How to Program        5      2012
+4  0134743350               Java How to Program       11      2018
+5  0133406954  Visual Basic 2012 How to Program        6      2014
+6  0134601548          Visual C# How to Program        6      2017
+7  0136151574         Visual C++ How to Program        2      2008 
+
+12. INNER JOIN authors and author_ISBN, list first, last, isbn:
+    first    last        isbn
+0   Abbey  Deitel  0132151006
+1   Abbey  Deitel  0133406954
+2  Harvey  Deitel  0134289366
+3  Harvey  Deitel  0135404673
+4  Harvey  Deitel  0132151006 
+
+13. INSERT new author 'Sue Red':
+        first    last
+id                   
+1        Paul  Deitel
+2      Harvey  Deitel
+3       Abbey  Deitel
+4         Dan   Quirk
+5   Alexander    Wald
+6         Sue     Red 
+
+14. UPDATE Sue Red's last name to 'Black':
+Rows updated: 1
+        first    last
+id                   
+1        Paul  Deitel
+2      Harvey  Deitel
+3       Abbey  Deitel
+4         Dan   Quirk
+5   Alexander    Wald
+6         Sue   Black 
+
+15. DELETE author Sue Black by id:
+Rows deleted: 0
+        first    last
+id                   
+1        Paul  Deitel
+2      Harvey  Deitel
+3       Abbey  Deitel
+4         Dan   Quirk
+5   Alexander    Wald
+6         Sue   Black 
+
